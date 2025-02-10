@@ -3,11 +3,6 @@ title: "Quarto PDF Template"
 subtitle: "BioMath GmbH"
 author: "Paul Schmidt"
 format: BioMathQuartoPDFTemplate-pdf
-execute:
-  echo: true      # Show code
-  eval: true      # Execute code
-  warning: true   # Show warnings
-  error: true     # Show errors
 ---
 
 Quarto extension for a template to generate a PDF with styling using LaTeX. 

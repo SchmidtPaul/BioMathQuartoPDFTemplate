@@ -2,13 +2,17 @@
 
 A Quarto extension for creating professionally styled PDF documents for biological and mathematical content. This template provides a clean, modern design with customizable styling options.
 
+Here is an example of the template in action:
+
+![](example.png)
+
 ## Installation
 
 ### Option 1: Start a New Project with the Template
 
 To create a new project with this template:
 
-```bash
+``` bash
 quarto use template SchmidtPaul/BioMathQuartoPDFTemplate
 ```
 
@@ -16,13 +20,13 @@ quarto use template SchmidtPaul/BioMathQuartoPDFTemplate
 
 To use this extension in an existing project:
 
-```bash
+``` bash
 quarto install extension SchmidtPaul/BioMathQuartoPDFTemplate
 ```
 
 Then, add this to your document's YAML:
 
-```yaml
+``` yaml
 format: BioMathQuartoPDFTemplate-pdf
 ```
 
@@ -30,7 +34,7 @@ format: BioMathQuartoPDFTemplate-pdf
 
 After installation, create a new .qmd file with this YAML header:
 
-```yaml
+``` yaml
 ---
 title: "Your Document Title"
 subtitle: "Document Subtitle"

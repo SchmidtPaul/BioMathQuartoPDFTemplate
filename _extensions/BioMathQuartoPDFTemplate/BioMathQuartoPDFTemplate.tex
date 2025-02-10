@@ -6,26 +6,30 @@
 \usepackage{sectsty}
 \usepackage{fontspec}
 \usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{mdframed}
+\usepackage{fvextra}
 
 %% Set page size with a wider right margin
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm, bottom=20mm, right=50mm}
 
 %% Let's define some colours
-\definecolor{light}{HTML}{bce2cc}
-\definecolor{highlight}{HTML}{00923f}
+\definecolor{lightBMgreen}{HTML}{bce2cc}
+\definecolor{BMgreen}{HTML}{00923f}
 \definecolor{dark}{HTML}{495057}
+\definecolor{codebg}{HTML}{e9ecef} 
 
 %% Let's add the border on the right hand side 
 \AddToShipoutPicture{% 
     \AtPageLowerLeft{% 
         \put(\LenToUnit{\dimexpr\paperwidth-3cm},0){% 
-            \color{light}\rule{3cm}{\LenToUnit\paperheight}%
+            \color{lightBMgreen}\rule{3cm}{\LenToUnit\paperheight}%
           }%
      }%
      % logo
     \AtPageLowerLeft{% start the bar at the bottom right of the page
-        \put(\LenToUnit{\dimexpr\paperwidth-2.25cm},27.2cm){% move it to the top right
-            \color{light}\includegraphics[width=1.5cm]{_extensions/nrennie/PrettyPDF/logo.png}
+        \put(\LenToUnit{\dimexpr\paperwidth-2.75cm},28.5cm){% move it to the top right
+            \color{lightBMgreen}\includegraphics[width=2.45cm]{_extensions/BioMathQuartoPDFTemplate/BioMath_logo_name_1500x411.png}
           }%
      }%
 }
@@ -34,7 +38,7 @@
 \fancypagestyle{mystyle}{
   \fancyhf{}
   \renewcommand\headrulewidth{0pt}
-  \fancyfoot[R]{\thepage}
+  \fancyfoot[R]{\color{BMgreen}\thepage/\pageref{LastPage}}
   \fancyfootoffset{3.5cm}
 }
 \setlength{\footskip}{20pt}
@@ -59,7 +63,7 @@
 
 %% Use some custom fonts
 \setsansfont{Ubuntu}[
-    Path=_extensions/nrennie/PrettyPDF/Ubuntu/,
+    Path=_extensions/BioMathQuartoPDFTemplate/Ubuntu/,
     Scale=0.9,
     Extension = .ttf,
     UprightFont=*-Regular,
@@ -68,10 +72,20 @@
     ]
 
 \setmainfont{Ubuntu}[
-    Path=_extensions/nrennie/PrettyPDF/Ubuntu/,
+    Path=_extensions/BioMathQuartoPDFTemplate/Ubuntu/,
     Scale=0.9,
     Extension = .ttf,
     UprightFont=*-Regular,
     BoldFont=*-Bold,
     ItalicFont=*-Italic,
     ]
+
+% Background color for code output (!) blocks
+\surroundwithmdframed[
+  backgroundcolor=lightBMgreen,
+  linewidth=0pt,
+  innerleftmargin=5pt,
+  innerrightmargin=5pt,
+  innertopmargin=5pt,
+  innerbottommargin=5pt
+]{verbatim}

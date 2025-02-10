@@ -1,6 +1,6 @@
-title: BioMathQuartoTemplate
+title: BioMathQuartoPDFTemplate
 author: Paul Schmidt
-version: 0.0.1
+version: 0.0.2
 contributes:
   project:
     project:
@@ -8,10 +8,10 @@ contributes:
   formats: 
     pdf:
       include-in-header: 
-       - "BioMathQuartoTemplate.tex"
+       - "BioMathQuartoPDFTemplate.tex"
       include-before-body:
        - "pagestyle.tex"
       toc: false
-      code-block-bg: light
-      linkcolor: highlight
-      urlcolor: highlight
+      code-block-bg: codebg
+      linkcolor: BMgreen
+      urlcolor: BMgreen

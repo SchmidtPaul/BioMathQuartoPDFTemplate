@@ -1,10 +1,28 @@
 ---
-title: "Document Title"
-subtitle: "Document Subtitle"
-author: "Author Name"
+title: "Quarto PDF Template"
+subtitle: "BioMath GmbH"
+author: "Paul Schmidt"
 format: BioMathQuartoPDFTemplate-pdf
+execute:
+  echo: true      # Show code
+  eval: true      # Execute code
+  warning: true   # Show warnings
+  error: true     # Show errors
 ---
 
-## Content Goes Here
+Quarto extension for a template to generate a PDF with styling using LaTeX. 
+You can find the underyling files here: https://github.com/SchmidtPaul/BioMathQuartoPDFTemplate
 
-Your document content...
+This is very much based on Nicola Rennie's [Making Pretty PDFs with Quarto](https://nrennie.rbind.io/blog/pdf-quarto/making-pretty-pdf-quarto/).
+
+# Header 1
+
+## Header 2
+
+Here is some `inline code` and a code chunk:
+
+```{r}
+mod <- lm(weight ~ group, data = PlantGrowth)
+anova(mod)
+```
+

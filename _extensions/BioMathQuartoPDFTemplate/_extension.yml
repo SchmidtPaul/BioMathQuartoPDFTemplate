@@ -1,0 +1,17 @@
+title: BioMathQuartoTemplate
+author: Paul Schmidt
+version: 0.0.1
+contributes:
+  project:
+    project:
+      type: book
+  formats: 
+    pdf:
+      include-in-header: 
+       - "BioMathQuartoTemplate.tex"
+      include-before-body:
+       - "pagestyle.tex"
+      toc: false
+      code-block-bg: light
+      linkcolor: highlight
+      urlcolor: highlight

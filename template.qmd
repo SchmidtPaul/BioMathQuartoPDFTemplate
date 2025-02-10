@@ -1,0 +1,10 @@
+---
+title: "Document Title"
+subtitle: "Document Subtitle"
+author: "Author Name"
+format: BioMathQuartoPDFTemplate-pdf
+---
+
+## Content Goes Here
+
+Your document content...

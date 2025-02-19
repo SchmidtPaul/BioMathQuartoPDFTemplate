@@ -1,6 +1,6 @@
 title: BioMathQuartoPDFTemplate
 author: Paul Schmidt
-version: 0.0.2
+version: 1.0.0
 contributes:
   project:
     project:
@@ -15,3 +15,7 @@ contributes:
       code-block-bg: codebg
       linkcolor: BMgreen
       urlcolor: BMgreen
+      knitr:
+        opts_chunk:
+          R.options:
+            width: 78

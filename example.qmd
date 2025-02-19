@@ -14,6 +14,12 @@ This is very much based on Nicola Rennie's [Making Pretty PDFs with Quarto](http
 
 ## Header 2
 
+Here is a vector whose output would overflow if we had not changed the width in the underyling `_extension.yml`:
+
+```{r}
+letters
+```
+
 Here is some `inline code` and a code chunk:
 
 ```{r}

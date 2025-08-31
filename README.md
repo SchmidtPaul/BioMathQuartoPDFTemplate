@@ -1,6 +1,13 @@
 # BioMathQuartoPDFTemplate
 
-A Quarto extension for creating professionally styled PDF documents for biological and mathematical content. This template provides a clean, modern design with customizable styling options.
+A Quarto extension for creating professionally styled PDF documents for biological and mathematical content using **Typst**. This template provides a clean, modern design with customizable styling options and faster compilation than LaTeX-based templates.
+
+## ✨ New in Version 2.0
+
+- **Migrated to Typst** for faster compilation and modern typesetting
+- Maintained all original design elements (colors, logo, layout)
+- Improved code block formatting
+- Preserved Ubuntu font styling
 
 Here is an example of the template in action:
 
@@ -27,7 +34,7 @@ quarto install extension SchmidtPaul/BioMathQuartoPDFTemplate
 Then, add this to your document's YAML:
 
 ``` yaml
-format: BioMathQuartoPDFTemplate-pdf
+format: BioMathQuartoPDFTemplate-typst
 ```
 
 ## Usage
@@ -39,6 +46,19 @@ After installation, create a new .qmd file with this YAML header:
 title: "Your Document Title"
 subtitle: "Document Subtitle"
 author: "Your Name"
-format: BioMathQuartoPDFTemplate-pdf
+format: BioMathQuartoPDFTemplate-typst
 ---
 ```
+
+## Requirements
+
+- Quarto with Typst support (Quarto >= 1.4)
+- Ubuntu font (falls back to Arial if unavailable)
+
+## Design Features
+
+- Professional BioMath branding with logo
+- Custom green color scheme
+- Right-side colored margin with logo and page numbers
+- Styled headers and code blocks
+- Modern Typst-based typesetting

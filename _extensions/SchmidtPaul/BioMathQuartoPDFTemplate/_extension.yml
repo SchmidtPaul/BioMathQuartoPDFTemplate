@@ -1,21 +1,13 @@
 title: BioMathQuartoPDFTemplate
 author: Paul Schmidt
-version: 1.0.0
+version: 2.0.0
 contributes:
-  project:
-    project:
-      type: book
   formats: 
-    pdf:
-      include-in-header: 
-       - "BioMathQuartoPDFTemplate.tex"
-      include-before-body:
-       - "pagestyle.tex"
+    typst:
+      template-partials:
+        - typst-show.typ
+        - typst-template.typ
       toc: false
-      code-block-bg: codebg
-      linkcolor: BMgreen
-      urlcolor: BMgreen
-      knitr:
-        opts_chunk:
-          R.options:
-            width: 78
+      margin:
+        x: 20mm
+        y: 20mm

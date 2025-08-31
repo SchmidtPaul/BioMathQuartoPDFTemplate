@@ -1,20 +1,20 @@
 ---
-title: "Quarto PDF Template"
+title: "Quarto Typst Template"
 subtitle: "BioMath GmbH"
-author: "Paul Schmidt"
-format: BioMathQuartoPDFTemplate-pdf
+author: "Dr. Paul Schmidt"
+format: BioMathQuartoPDFTemplate-typst
 ---
 
-Quarto extension for a template to generate a PDF with styling using LaTeX. 
-You can find the underyling files here: https://github.com/SchmidtPaul/BioMathQuartoPDFTemplate
+Quarto extension for a template to generate a PDF with styling using Typst. 
+You can find the underlying files here: https://github.com/SchmidtPaul/BioMathQuartoPDFTemplate
 
-This is very much based on Nicola Rennie's [Making Pretty PDFs with Quarto](https://nrennie.rbind.io/blog/pdf-quarto/making-pretty-pdf-quarto/).
+This template has been converted from LaTeX to Typst for faster compilation and modern typesetting.
 
 # Header 1
 
 ## Header 2
 
-Here is a vector whose output would overflow if we had not changed the width in the underyling `_extension.yml`:
+Here is a vector whose output formatting is handled by Typst:
 
 ```{r}
 letters
@@ -27,3 +27,6 @@ mod <- lm(weight ~ group, data = PlantGrowth)
 anova(mod)
 ```
 
+### Header 3
+
+This subsection demonstrates the underlined header style.
